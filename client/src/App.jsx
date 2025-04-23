@@ -2,17 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import StudentDashboard from './Components/StudentDashboard'
-import LoginAsAdmin from './Components/LoginAsAdmin'
-import LandingPage from './Components/LandingPage'
-import AdminDashboard from './Components/AdminDashboard'
+import StudentDashboard from './pages/StudentDashboard'
+import LoginAsAdmin from './pages/LoginAsAdmin'
+import LandingPage from './pages/LandingPage'
+import AdminDashboard from './pages/AdminDashboard'
+import Homepage from './pages/Homepage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='text-4xl text-rose-600 text-center'>Faculty Feedback Automation System</h1>
+      <Homepage />
       <StudentDashboard />
       <LoginAsAdmin />
       <LandingPage />

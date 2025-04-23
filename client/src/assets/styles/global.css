@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+  
+  /* Custom scrollbar for dark mode */
+  .dark::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .dark::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+}
