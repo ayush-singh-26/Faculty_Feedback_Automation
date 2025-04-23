@@ -2,6 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import StudentDashboard from './Components/StudentDashboard'
+import LoginAsAdmin from './Components/LoginAsAdmin'
+import LandingPage from './Components/LandingPage'
+import AdminDashboard from './Components/AdminDashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +13,10 @@ function App() {
   return (
     <>
       <h1 className='text-4xl text-rose-600 text-center'>Faculty Feedback Automation System</h1>
+      <StudentDashboard />
+      <LoginAsAdmin />
+      <LandingPage />
+      <AdminDashboard />
     </>
   )
 }
